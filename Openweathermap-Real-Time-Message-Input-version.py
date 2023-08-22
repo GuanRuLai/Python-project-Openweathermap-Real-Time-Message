@@ -57,7 +57,7 @@ response = requests.get(url, data = payload)
 # 檢查 API 請求是否成功。若收到的響應是錯誤的，則引發一 HTTP 錯誤以停止程式運行。
 response.raise_for_status()
 
-print("Ensure you make a key and also plus @linenotify to your line friend!!")
+print(" Make sure you make a key and also plus @linenotify to your line friend!!")
 input_line_api = input("Please input your line notify api keys: ")
 my_token = f"{input_line_api}"
 counter_line = 0
