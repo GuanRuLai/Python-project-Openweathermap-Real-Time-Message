@@ -39,7 +39,7 @@ payload = {
     "exclude": "current,minutely,daily",
     "lang": "zh_tw"
 }
-response = requests.get(url, data = payload)
+response = requests.get(url, params = payload)
 # 檢查 API 請求是否成功。若收到的響應是錯誤的，則引發一 HTTP 錯誤以停止程式運行。
 response.raise_for_status()
 
