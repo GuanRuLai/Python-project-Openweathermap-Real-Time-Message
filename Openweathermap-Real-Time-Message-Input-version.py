@@ -43,7 +43,7 @@ input_location_lon = input("Please input location lon: ")
 # connect openweathermap api
 # json: https://api.openweathermap.org/data/2.5/weather?lat=25.105497&lon=121.597366&appid=d004968ab5800e8d6cfed0b96a46c59e
 url = "https://api.openweathermap.org/data/2.5/weather?lat={}&lon={}&appid=d004968ab5800e8d6cfed0b96a46c59e".format(input_location_lat, input_location_lon)
-weather_api = "d004968ab5800e8d6cfed0b96a46c59e"
+weather_api = {Your api}
 payload = {
     "appid": weather_api,
     "units": "metric",
@@ -54,7 +54,7 @@ response = requests.get(url, data = payload)
 # 檢查 API 請求是否成功。若收到的響應是錯誤的，則引發一 HTTP 錯誤以停止程式運行。
 response.raise_for_status()
 
-my_token = "coxRioVBGKBlBdGwdCqlg2QWfb1hipWxgjbn2lvD6hi"
+my_token = {Your token}
 counter_line = 0
 counter_error = 0
 
