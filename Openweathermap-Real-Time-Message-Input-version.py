@@ -25,7 +25,7 @@ input_location_chinese_name = input("Please input location's chinese name: ")
 
 # 自訂發送 Line Notify 通知內容
 def sendLine(mode, real_humidity, counter_line, token):
-    print(f"目前{input_location_chinese_name}濕度：" + str(real_humidity) + "%")
+    print(f"{input_location_chinese_name}濕度訊息已發送！")
     if mode == 1: # 濕度 >= 70
         message = f"現在{input_location_chinese_name}濕度為" + str(real_humidity) + "%" + ", 一定要帶傘，不然等著變成落湯雞！"
     elif mode == 2: # 40 <= 濕度 < 70
