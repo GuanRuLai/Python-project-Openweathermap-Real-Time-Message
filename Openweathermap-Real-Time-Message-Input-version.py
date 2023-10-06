@@ -7,7 +7,7 @@ se2 = pd.Series({"新北市": 121.4657, "台北市": 121.5319, "桃園市": 121.
 # 以相同的 key 進行左右合併
 df = pd.concat([se1, se2], axis = 1)
 df.columns = ["lat", "lon"]
-print("Location_referrence:")
+print("Location_reference:")
 print(df)
 
 # 自訂發送 Line Notify 通知形式
