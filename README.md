@@ -1,18 +1,11 @@
 ## 專案介紹
 本專案是一個透過 OpenWeatherMap API 獲取指定地點天氣濕度，並透過 LINE Notify 發送通知的 Python 腳本。使用者可指定地點，當濕度達到特定門檻時，自動推送通知。
 
-## 主要功能
+## 功能特點
 - 取得台灣六都的經緯度參考
 - 自訂查詢任意地點的濕度資訊
 - 依據濕度等級自動發送 LINE Notify 通知
 - 程式自動運行，達到指定次數後停止
-
-## 使用技術
-- Python
-- requests
-- pandas
-- OpenWeatherMap API
-- LINE Notify API
 
 ## 安裝與使用
 ### 1. 安裝必要套件
